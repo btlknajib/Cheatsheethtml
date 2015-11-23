@@ -8,66 +8,68 @@
   <script type="application/javascript" src="js/jquery-1.11.3.min.js"></script>
   <script type="application/javascript" src="js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cheatsheet</title>
+  <link rel="stylesheet" href="animate.min.css">
+  <title>HTML Cheatsheet</title>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand titre1" href="#"><span id="titre1">Cheatsheet</span>.co</a>
+<!--## DEBUT DU HEADER ##-->
+  <header>
+
+    <!--## DEBUT DE LA NAV ##-->
+    <nav class="navbar navbar-inverse navbar-fixed-top animated flash">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand titre1" href="#">
+            <span id="titre1">Cheatsheet</span>.co</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">HTML<span class="sr-only"></span></a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Emmet</a></li>
+            <form action="" class="navbar-form navbar-right">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Rechercher">
+              </div>
+            </form>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Facebook</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Par mail</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">HTML<span class="sr-only"></span></a></li>
-          <li><a href="#">CSS</a></li>
-          <li><a href="#">Emmet</a></li>
-          <form action="" class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Rechercher">
-            </div>
-          </form>
+    </nav>
+    <!--## FIN DE LA NAV ##-->
+
+    <h1 class="animated fadeInUp">
+      <strong>Cheatsheet HTML</strong>
+    </h1>
+    <img src="img/html.png" alt="Responsive image" class="img-responsive imgr1 animated rubberBand">
+  </header>
+  <!--## FIN DU HEADER ##-->
 
 
 
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Facebook</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Par mail</a></li>
-            </ul>
-          </li>
-        </ul>
-
-
-
-
-
-      </div>
-    </div>
-  </nav>
-
-
-
-
-  <section>
-    <div class="container">
-      <h1 style="text-align:center">
-        <strong>Cheatsheet HTML</strong>
-      </h1>
-      <img src="html.png" alt="Responsive image" class="img-responsive imgr1">
-      <article>
+<!--## DEBUT DIV CONTAINER##-->
+  <div class="container">
+    <section> <!--## DEBUT SECTION ##-->
+      <article><!--## DEBUT ARTICLE ##-->
         <div id="containerbody" class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><!--## DEBUT DIV COL-XS-12 -SM-12 -MD-6 -LG-6 ##-->
               <h3>Une structure basique en HTML</h3>
               <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="panel-heading">
@@ -88,9 +90,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> <!--## FIN DIV COL-XS-12 -SM-12 -MD-6 -LG-6 ##-->
 
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><!--## DEBUT DIV COL-XS-12 -SM-12 -MD-6 -LG-6 ##-->
               <h3>Les balises basiques</h3>
               <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="panel-heading">
@@ -145,418 +147,418 @@
                   <br>
                 </div>
               </div>
+            </div><!--## FIN DIV COL-XS-12 -SM-12 -MD-6 -LG-6 ##-->
+          </div>
+        </div>
+      </article><!--## FIN ARTICLE ##-->
+
+      <article><!--## DEBUT ARTICLE ##-->
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h3>Mettre en forme du texte</h3>
+            <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel-heading">
+                <a href="#item6" data-toggle="collapse" aria-expanded="false" class="collapsed">
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                </a>
+              </div>
+              <div id="item6" class="panel-collapse collapse">
+                <div class="panel-body"> Voici les balises basiques pour insérer du texte </div>
+                <div class="panel-heading">
+                  <a href="#item7" data-toggle="collapse"> Insérer un titre </a>
+                </div>
+                <div id="item7" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;hX&gt; ... &lt;/hX&gt;
+                  </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item8" data-toggle="collapse"> Mettre le texte en gras </a>
+                </div>
+                <div id="item8" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;b&gt; ... &lt;/b&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item9" data-toggle="collapse"> Mettre le texte en italique </a>
+                </div>
+                <div id="item9" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;i&gt; ... &lt;/i&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item10" data-toggle="collapse"> Souligner le texte </a>
+                </div>
+                <div id="item10" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;u&gt; ... &lt;/u&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item11" data-toggle="collapse"> Barrer le texte </a>
+                </div>
+                <div id="item11" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;strike&gt; ... &lt;/strike&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item12" data-toggle="collapse"> Pour les calculs </a>
+                </div>
+                <div id="item12" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;sup&gt; ... &lt;/sup&gt;
+                    <br>
+                    <br>BC&lt;sup&gt;2&lt;/sup&gt; = AB&lt;sup&gt;2&lt;/sup&gt; + AC&lt;sup&gt;2&lt;/sup&gt; donne :
+                    <br>BC<sup>2</sup> = AB<sup>2</sup> + AC<sup>2</sup>
+                  </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item13" data-toggle="collapse"> Mettre du texte en indice </a>
+                </div>
+                <div id="item13" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;sub&gt; ... &lt;/sub&gt;
+                    <br> X<sub>1</sub> + X<sub>2</sub> + X<sub>3</sub> = 100
+                    <br> X<sub>1</sub> - X<sub>2</sub> = 10
+                    <br> X<sub>2</sub> * X<sub>3</sub> = 1000
+                  </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item14" data-toggle="collapse"> Réduire la taille d'affichage de la police </a>
+                </div>
+                <div id="item14" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;small&gt; ... &lt;/small&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item15" data-toggle="collapse"> Utiliser le font-family Courier </a>
+                </div>
+                <div id="item15" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;tt&gt; ... &lt;/tt&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item16" data-toggle="collapse"> Respect du contenu du texte (espaces, tabulations) </a>
+                </div>
+                <div id="item16" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;pre&gt; ... &lt;/pre&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item17" data-toggle="collapse"> Mettre en valeur un paragraphe </a>
+                </div>
+                <div id="item17" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;blockquote&gt; ... &lt;/blockquote&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item18" data-toggle="collapse"> Mettre en gras pour tous les navigateurs </a>
+                </div>
+                <div id="item18" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;strong&gt; ... &lt;/strong&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item19" data-toggle="collapse"> Mettre le texte en italique pour tous navigateurs </a>
+                </div>
+                <div id="item19" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;em&gt; ... &lt;/em&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item20" data-toggle="collapse"> Mettre en forme le texte </a>
+                </div>
+                <div id="item20" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;font&gt; ... &lt;/font&gt; </div>
+                </div>
+                <br>
+              </div>
             </div>
           </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h3>Les divisions</h3>
+            <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel-heading">
+                <a href="#item22" data-toggle="collapse" aria-expanded="false" class="collapsed">
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                </a>
+              </div>
+              <div id="item22" class="panel-collapse collapse ">
+                <div class="panel-body"> Mettre en forme la page </div>
+                <div class="panel-heading">
+                  <a href="#item23" data-toggle="collapse"> Créer un conteneur </a>
+                </div>
+                <div id="item23" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;div&gt; ... &lt;/div&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item24" data-toggle="collapse"> Créer un paragraphe </a>
+                </div>
+                <div id="item24" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;p&gt; ... &lt;/p&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item25" data-toggle="collapse"> Sauter une ou plusieurs lignes </a>
+                </div>
+                <div id="item25" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;br&gt; ... &lt;/br&gt; </div>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+
         </div>
       </article>
 
       <article>
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <h3>Mettre en forme du texte</h3>
-              <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="panel-heading">
-                  <a href="#item6" data-toggle="collapse" aria-expanded="false" class="collapsed">
-                    <span class="glyphicon glyphicon-eye-open"></span>
-                  </a>
-                </div>
-                <div id="item6" class="panel-collapse collapse">
-                  <div class="panel-body"> Voici les balises basiques pour insérer du texte </div>
-                  <div class="panel-heading">
-                    <a href="#item7" data-toggle="collapse"> Insérer un titre </a>
-                  </div>
-                  <div id="item7" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;hX&gt; ... &lt;/hX&gt;
-                    </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item8" data-toggle="collapse"> Mettre le texte en gras </a>
-                  </div>
-                  <div id="item8" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;b&gt; ... &lt;/b&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item9" data-toggle="collapse"> Mettre le texte en italique </a>
-                  </div>
-                  <div id="item9" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;i&gt; ... &lt;/i&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item10" data-toggle="collapse"> Souligner le texte </a>
-                  </div>
-                  <div id="item10" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;u&gt; ... &lt;/u&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item11" data-toggle="collapse"> Barrer le texte </a>
-                  </div>
-                  <div id="item11" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;strike&gt; ... &lt;/strike&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item12" data-toggle="collapse"> Pour les calculs </a>
-                  </div>
-                  <div id="item12" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;sup&gt; ... &lt;/sup&gt;
-                      <br>
-                      <br>BC&lt;sup&gt;2&lt;/sup&gt; = AB&lt;sup&gt;2&lt;/sup&gt; + AC&lt;sup&gt;2&lt;/sup&gt; donne :
-                      <br>BC<sup>2</sup> = AB<sup>2</sup> + AC<sup>2</sup>
-                    </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item13" data-toggle="collapse"> Mettre du texte en indice </a>
-                  </div>
-                  <div id="item13" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;sub&gt; ... &lt;/sub&gt;
-                      <br> X<sub>1</sub> + X<sub>2</sub> + X<sub>3</sub> = 100
-                      <br> X<sub>1</sub> - X<sub>2</sub> = 10
-                      <br> X<sub>2</sub> * X<sub>3</sub> = 1000
-                    </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item14" data-toggle="collapse"> Réduire la taille d'affichage de la police </a>
-                  </div>
-                  <div id="item14" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;small&gt; ... &lt;/small&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item15" data-toggle="collapse"> Utiliser le font-family Courier </a>
-                  </div>
-                  <div id="item15" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;tt&gt; ... &lt;/tt&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item16" data-toggle="collapse"> Respect du contenu du texte (espaces, tabulations) </a>
-                  </div>
-                  <div id="item16" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;pre&gt; ... &lt;/pre&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item17" data-toggle="collapse"> Mettre en valeur un paragraphe </a>
-                  </div>
-                  <div id="item17" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;blockquote&gt; ... &lt;/blockquote&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item18" data-toggle="collapse"> Mettre en gras pour tous les navigateurs </a>
-                  </div>
-                  <div id="item18" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;strong&gt; ... &lt;/strong&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item19" data-toggle="collapse"> Mettre le texte en italique pour tous navigateurs </a>
-                  </div>
-                  <div id="item19" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;em&gt; ... &lt;/em&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item20" data-toggle="collapse"> Mettre en forme le texte </a>
-                  </div>
-                  <div id="item20" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;font&gt; ... &lt;/font&gt; </div>
-                  </div>
-                  <br>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <h3>Les divisions</h3>
-              <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h3>Images</h3>
+            <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel-heading">
+                <a href="#item34" data-toggle="collapse" aria-expanded="false" class="collapsed">
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                </a>
+              </div>
+              <div id="item34" class="panel-collapse collapse">
+                <div class="panel-body"> Insérer une image ainsi que ses attributs</div>
                 <div class="panel-heading">
-                  <a href="#item22" data-toggle="collapse" aria-expanded="false" class="collapsed">
-                    <span class="glyphicon glyphicon-eye-open"></span>
-                  </a>
+                  <a href="#item35" data-toggle="collapse"> Insérer l'image </a>
                 </div>
-                <div id="item22" class="panel-collapse collapse ">
-                  <div class="panel-body"> Mettre en forme la page </div>
-                  <div class="panel-heading">
-                    <a href="#item23" data-toggle="collapse"> Créer un conteneur </a>
-                  </div>
-                  <div id="item23" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;div&gt; ... &lt;/div&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item24" data-toggle="collapse"> Créer un paragraphe </a>
-                  </div>
-                  <div id="item24" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;p&gt; ... &lt;/p&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item25" data-toggle="collapse"> Sauter une ou plusieurs lignes </a>
-                  </div>
-                  <div id="item25" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;br&gt; ... &lt;/br&gt; </div>
-                  </div>
-                  <br>
+                <div id="item35" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;img src="url" alt="text"&gt; ... &lt;/img&gt; </div>
                 </div>
+                <div class="panel-heading">
+                  <a href="#item36" data-toggle="collapse"> URL ou nom de fichier de l'image </a>
+                </div>
+                <div id="item36" class="panel-collapse collapse">
+                  <div class="panel-body"> src="url" </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item37" data-toggle="collapse"> Texte alternatif (OBLIGATOIRE) </a>
+                </div>
+                <div id="item37" class="panel-collapse collapse">
+                  <div class="panel-body"> alt="text" </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item38" data-toggle="collapse"> ALigner l'image </a>
+                </div>
+                <div id="item38" class="panel-collapse collapse">
+                  <div class="panel-body"> align="Valeur" </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item39" data-toggle="collapse"> Largeur de l'image </a>
+                </div>
+                <div id="item39" class="panel-collapse collapse">
+                  <div class="panel-body"> width="Valeur en px" </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item40" data-toggle="collapse"> Hauteur de l'image </a>
+                </div>
+                <div id="item40" class="panel-collapse collapse">
+                  <div class="panel-body"> height="Valeur en px" </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item41" data-toggle="collapse"> Bordure de l'image </a>
+                </div>
+                <div id="item41" class="panel-collapse collapse">
+                  <div class="panel-body"> border="Valeur en px" </div>
+                </div>
+                <br>
               </div>
             </div>
           </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h3>Les balises de liens</h3>
+            <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel-heading">
+                <a href="#item44" data-toggle="collapse" aria-expanded="false" class="collapsed">
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                </a>
+              </div>
+              <div id="item44" class="panel-collapse collapse">
+                <div class="panel-body">Créer un lien hypertexte vers un document, fichier ou un url et les attributs</div>
+                <div class="panel-heading">
+                  <a href="#item45" data-toggle="collapse"> Lien basique </a>
+                </div>
+                <div id="item45" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;a href="url" name=""&gt; ... &lt;/a&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item46" data-toggle="collapse"> L'url de la page </a>
+                </div>
+                <div id="item46" class="panel-collapse collapse">
+                  <div class="panel-body"> url="lienhypertexte" </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item47" data-toggle="collapse"> Nom du lien </a>
+                </div>
+                <div id="item47" class="panel-collapse collapse">
+                  <div class="panel-body"> name="nomdulien" </div>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+
         </div>
       </article>
 
       <article>
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <h3>Images</h3>
-              <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h3>Les listes</h3>
+            <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel-heading">
+                <a href="#item116" data-toggle="collapse" aria-expanded="false" class="collapsed">
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                </a>
+              </div>
+              <div id="item116" class="panel-collapse collapse">
+                <div class="panel-body"> Créer des listes ordonnées ou desordonnées </div>
+
                 <div class="panel-heading">
-                  <a href="#item34" data-toggle="collapse" aria-expanded="false" class="collapsed">
-                    <span class="glyphicon glyphicon-eye-open"></span>
-                  </a>
+                  <a href="#item117" data-toggle="collapse"> Liste ordonnée </a>
                 </div>
-                <div id="item34" class="panel-collapse collapse">
-                  <div class="panel-body"> Insérer une image ainsi que ses attributs</div>
-                  <div class="panel-heading">
-                    <a href="#item35" data-toggle="collapse"> Insérer l'image </a>
-                  </div>
-                  <div id="item35" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;img src="url" alt="text"&gt; ... &lt;/img&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item36" data-toggle="collapse"> URL ou nom de fichier de l'image </a>
-                  </div>
-                  <div id="item36" class="panel-collapse collapse">
-                    <div class="panel-body"> src="url" </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item37" data-toggle="collapse"> Texte alternatif (OBLIGATOIRE) </a>
-                  </div>
-                  <div id="item37" class="panel-collapse collapse">
-                    <div class="panel-body"> alt="text" </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item38" data-toggle="collapse"> ALigner l'image </a>
-                  </div>
-                  <div id="item38" class="panel-collapse collapse">
-                    <div class="panel-body"> align="Valeur" </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item39" data-toggle="collapse"> Largeur de l'image </a>
-                  </div>
-                  <div id="item39" class="panel-collapse collapse">
-                    <div class="panel-body"> width="Valeur en px" </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item40" data-toggle="collapse"> Hauteur de l'image </a>
-                  </div>
-                  <div id="item40" class="panel-collapse collapse">
-                    <div class="panel-body"> height="Valeur en px" </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item41" data-toggle="collapse"> Bordure de l'image </a>
-                  </div>
-                  <div id="item41" class="panel-collapse collapse">
-                    <div class="panel-body"> border="Valeur en px" </div>
-                  </div>
-                  <br>
+                <div id="item117" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;ol&gt; ... &lt;/ol&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item118" data-toggle="collapse"> Liste non-ordonnée </a>
+                </div>
+                <div id="item118" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;ul&gt; ... &lt;/ul&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item119" data-toggle="collapse"> Les élements des listes </a>
+                </div>
+                <div id="item119" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;li&gt; ... &lt;/li&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item120" data-toggle="collapse"> Les élements encadrant une liste de définitions </a>
+                </div>
+                <div id="item120" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;dl&gt; ... &lt;/dl&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item121" data-toggle="collapse"> Les élements contenant le terme à définir </a>
+                </div>
+                <div id="item121" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;dt&gt; ... &lt;/dt&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item122" data-toggle="collapse"> Les élements contenant la description du terme écrit </a>
+                </div>
+                <div id="item122" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;d&gt; ... &lt;/d&gt; </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <h3>Les balises de liens</h3>
-              <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h3>Tableau</h3>
+            <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel-heading">
+                <a href="#item51" data-toggle="collapse" aria-expanded="false" class="collapsed">
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                </a>
+              </div>
+              <div id="item51" class="panel-collapse collapse">
+                <div class="panel-body"> Les balises et attributs adéquats à la création d'un tableau</div>
                 <div class="panel-heading">
-                  <a href="#item44" data-toggle="collapse" aria-expanded="false" class="collapsed">
-                    <span class="glyphicon glyphicon-eye-open"></span>
-                  </a>
+                  <a href="#item52" data-toggle="collapse"> Définir un tableau </a>
                 </div>
-                <div id="item44" class="panel-collapse collapse">
-                  <div class="panel-body">Créer un lien hypertexte vers un document, fichier ou un url et les attributs</div>
-                  <div class="panel-heading">
-                    <a href="#item45" data-toggle="collapse"> Lien basique </a>
-                  </div>
-                  <div id="item45" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;a href="url" name=""&gt; ... &lt;/a&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item46" data-toggle="collapse"> L'url de la page </a>
-                  </div>
-                  <div id="item46" class="panel-collapse collapse">
-                    <div class="panel-body"> url="lienhypertexte" </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item47" data-toggle="collapse"> Nom du lien </a>
-                  </div>
-                  <div id="item47" class="panel-collapse collapse">
-                    <div class="panel-body"> name="nomdulien" </div>
-                  </div>
-                  <br>
+                <div id="item52" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;table&gt; ... &lt;/table&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item53" data-toggle="collapse"> Définir les bordures d'un tableau </a>
+                </div>
+                <div id="item53" class="panel-collapse collapse">
+                  <div class="panel-body"> Border="Valeur en px" </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item54" data-toggle="collapse"> Définir les couleurs des bordures </a>
+                </div>
+                <div id="item54" class="panel-collapse collapse">
+                  <div class="panel-body"> Bordercolor ="Valeur" </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item55" data-toggle="collapse"> Définir la largeur du tableau </a>
+                </div>
+                <div id="item55" class="panel-collapse collapse">
+                  <div class="panel-body"> Width="Valeur en px" </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item56" data-toggle="collapse"> Définir la hauteur du tableau </a>
+                </div>
+                <div id="item56" class="panel-collapse collapse">
+                  <div class="panel-body"> Height="Valeur en px" </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item57" data-toggle="collapse"> Définir une nouvelle ligne </a>
+                </div>
+                <div id="item57" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;tr&gt; ... &lt;/tr&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item58" data-toggle="collapse"> Définir le titre de la cellule </a>
+                </div>
+                <div id="item58" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;th&gt; ... &lt;/th&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item59" data-toggle="collapse"> Définir les cellules d'un tableau </a>
+                </div>
+                <div id="item59" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;td&gt; ... &lt;/td&gt; </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </article>
 
       <article>
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <h3>Les listes</h3>
-              <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="panel-heading">
-                  <a href="#item116" data-toggle="collapse" aria-expanded="false" class="collapsed">
-                    <span class="glyphicon glyphicon-eye-open"></span>
-                  </a>
-                </div>
-                <div id="item116" class="panel-collapse collapse">
-                  <div class="panel-body"> Créer des listes ordonnées ou desordonnées </div>
 
-                  <div class="panel-heading">
-                    <a href="#item117" data-toggle="collapse"> Liste ordonnée </a>
-                  </div>
-                  <div id="item117" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;ol&gt; ... &lt;/ol&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item118" data-toggle="collapse"> Liste non-ordonnée </a>
-                  </div>
-                  <div id="item118" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;ul&gt; ... &lt;/ul&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item119" data-toggle="collapse"> Les élements des listes </a>
-                  </div>
-                  <div id="item119" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;li&gt; ... &lt;/li&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item120" data-toggle="collapse"> Les élements encadrant une liste de définitions </a>
-                  </div>
-                  <div id="item120" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;dl&gt; ... &lt;/dl&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item121" data-toggle="collapse"> Les élements contenant le terme à définir </a>
-                  </div>
-                  <div id="item121" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;dt&gt; ... &lt;/dt&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item122" data-toggle="collapse"> Les élements contenant la description du terme écrit </a>
-                  </div>
-                  <div id="item122" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;d&gt; ... &lt;/d&gt; </div>
-                  </div>
-                </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h3>Les balises Forms</h3>
+            <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel-heading">
+                <a href="#item85" data-toggle="collapse" aria-expanded="false" class="collapsed">
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                </a>
               </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <h3>Tableau</h3>
-              <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div id="item85" class="panel-collapse collapse">
+                <div class="panel-body"> Déclarer une zone pouvant saisir des informations</div>
                 <div class="panel-heading">
-                  <a href="#item51" data-toggle="collapse" aria-expanded="false" class="collapsed">
-                    <span class="glyphicon glyphicon-eye-open"></span>
-                  </a>
+                  <a href="#item86" data-toggle="collapse"> Déclarer un formulaire </a>
                 </div>
-                <div id="item51" class="panel-collapse collapse">
-                  <div class="panel-body"> Les balises et attributs adéquats à la création d'un tableau</div>
-                  <div class="panel-heading">
-                    <a href="#item52" data-toggle="collapse"> Définir un tableau </a>
-                  </div>
-                  <div id="item52" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;table&gt; ... &lt;/table&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item53" data-toggle="collapse"> Définir les bordures d'un tableau </a>
-                  </div>
-                  <div id="item53" class="panel-collapse collapse">
-                    <div class="panel-body"> Border="Valeur en px" </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item54" data-toggle="collapse"> Définir les couleurs des bordures </a>
-                  </div>
-                  <div id="item54" class="panel-collapse collapse">
-                    <div class="panel-body"> Bordercolor ="Valeur" </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item55" data-toggle="collapse"> Définir la largeur du tableau </a>
-                  </div>
-                  <div id="item55" class="panel-collapse collapse">
-                    <div class="panel-body"> Width="Valeur en px" </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item56" data-toggle="collapse"> Définir la hauteur du tableau </a>
-                  </div>
-                  <div id="item56" class="panel-collapse collapse">
-                    <div class="panel-body"> Height="Valeur en px" </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item57" data-toggle="collapse"> Définir une nouvelle ligne </a>
-                  </div>
-                  <div id="item57" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;tr&gt; ... &lt;/tr&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item58" data-toggle="collapse"> Définir le titre de la cellule </a>
-                  </div>
-                  <div id="item58" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;th&gt; ... &lt;/th&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item59" data-toggle="collapse"> Définir les cellules d'un tableau </a>
-                  </div>
-                  <div id="item59" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;td&gt; ... &lt;/td&gt; </div>
-                  </div>
+                <div id="item86" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;form&gt; ... &lt;/form&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item87" data-toggle="collapse"> Définir une demande d'information précise </a>
+                </div>
+                <div id="item87" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;input&gt; ... &lt;/input&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item88" data-toggle="collapse"> Créer une liste déroulante ou à choix multiples </a>
+                </div>
+                <div id="item88" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;select&gt; ... &lt;/select&gt; </div>
+                </div>
+                <div class="panel-heading">
+                  <a href="#item89" data-toggle="collapse"> Définir un élément de la liste déroulante </a>
+                </div>
+                <div id="item89" class="panel-collapse collapse">
+                  <div class="panel-body"> &lt;option&gt; ... &lt;/option&gt; </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </article>
 
-      <article>
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <h3>Les balises Forms</h3>
-              <div class="panel panel-default col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="panel-heading">
-                  <a href="#item85" data-toggle="collapse" aria-expanded="false" class="collapsed">
-                    <span class="glyphicon glyphicon-eye-open"></span>
-                  </a>
-                </div>
-                <div id="item85" class="panel-collapse collapse">
-                  <div class="panel-body"> Déclarer une zone pouvant saisir des informations</div>
-                  <div class="panel-heading">
-                    <a href="#item86" data-toggle="collapse"> Déclarer un formulaire </a>
-                  </div>
-                  <div id="item86" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;form&gt; ... &lt;/form&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item87" data-toggle="collapse"> Définir une demande d'information précise </a>
-                  </div>
-                  <div id="item87" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;input&gt; ... &lt;/input&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item88" data-toggle="collapse"> Créer une liste déroulante ou à choix multiples </a>
-                  </div>
-                  <div id="item88" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;select&gt; ... &lt;/select&gt; </div>
-                  </div>
-                  <div class="panel-heading">
-                    <a href="#item89" data-toggle="collapse"> Définir un élément de la liste déroulante </a>
-                  </div>
-                  <div id="item89" class="panel-collapse collapse">
-                    <div class="panel-body"> &lt;option&gt; ... &lt;/option&gt; </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </article>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <nav class="navbar navbar-default navbarbot">
     <div class="container-fluid">
